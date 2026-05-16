@@ -1,0 +1,74 @@
+---
+title: "Project 4"
+author: "Carl Misquitta"
+output:
+  html_document:
+    self_contained: true
+---
+
+```{css, echo=FALSE}
+body {
+  background-color: #fee0d2;
+  color: #202020;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #de2d26;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 0 0 10px #fc9272;
+}
+
+h2 {
+  color: #de2d26;
+  font-weight: 900;
+  border-bottom: 4px solid #fc9272;
+  padding-bottom: 8px;
+}
+
+.section {
+  animation: fadein 1.2s;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+```
+
+## Introduction
+
+For this project, my data collection focused on observing YouTube Shorts. Each observation was one Short that appeared while I was watching and logging videos. I recorded the category, video length, number of likes, whether the Short used or discussed AI, and an engagement rating out of 10. I chose this focus because Shorts are made to be watched quickly, so I wanted to explore what features might connect to engagement.
+
+I used my previous Google Form from Project 2 and adjusted it for this project. I added a question about AI because AI is now a common topic in online content, and I wanted to see whether it appeared often in my Shorts sample. I also removed the question about how long I personally watched each Short because I felt it was too personal and could be affected by outside factors, such as distractions or my mood.
+
+The form questions were useful because they mostly recorded observable details. The category question created categorical data, while the length and likes questions created numeric data. The form was anonymous, and I collected the data myself.
+
+For my visualisations, I focused on variables that helped tell a story about engagement. I used bar charts to compare categories, AI use, and average likes by category. I used a scatter plot to compare video length and likes, and a timestamp plot to show when observations were logged. The visual story showed that entertainment and advertisement appeared often, AI was not common, video length did not fully explain likes, and food videos had the highest average likes in my sample.
+
+## Visual data story
+
+[My visual data story](PASTE_YOUR_GITHUB_PAGES_LINK_HERE)
+
+My visual data story demonstrates creativity through its design and structure. I used a red colour palette to match the YouTube Shorts theme, and I used CSS to create bold headings, borders, shadows, and a consistent page style. This helped the visual story feel connected to the topic rather than looking like a plain report.
+
+The order of the plots also helped create a story. I started with the most common categories, then looked at AI use, video length and likes, average likes by category, and finally the timestamp data. This made the webpage flow from general content patterns to more specific ideas about engagement.
+
+## Learning reflection
+
+One important idea I learned from Module 4 is that visualisations need to be designed around the message you want to communicate. A graph is not just about showing data; it needs appropriate variables, labels, colours, and chart types. For example, bar charts worked well for comparing categories, while a scatter plot worked better for comparing video length and likes.
+
+I also learned that data usually needs to be prepared before making useful visualisations. In this project, I created smaller data frames for different plots and summarised the data where needed. I am now more curious about how visual design choices, such as colour, layout, and scrolling effects, can make data stories more engaging and easier to understand.
+
+
+## Appendix
+
+```{r file='data_visualisation.R', eval=FALSE, echo=TRUE}
+
+```
