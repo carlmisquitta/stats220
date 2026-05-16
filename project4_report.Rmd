@@ -84,7 +84,6 @@ One important idea I learned from Module 4 is that visualisations need to be des
 
 I also learned that data usually needs to be prepared before making useful visualisations. In this project, I created smaller data frames for different plots and summarised the data where needed. I am now more curious about how visual design choices, such as colour, layout, and scrolling effects, can make data stories more engaging and easier to understand.
 
-I used AI support for troubleshooting and planning parts of this project, but the R code approaches I used were based on STATS 220 Lab 4A and Lab 4B examples.
 
 ## Appendix
 
