@@ -1,5 +1,6 @@
 ---
 title: "Project 4"
+subtitle: "STATS 220 Semester One, 2026"
 author: "Carl Misquitta"
 output:
   html_document:
@@ -13,11 +14,23 @@ body {
   font-family: Arial, sans-serif;
 }
 
-h1 {
+h1.title {
   color: #de2d26;
   text-align: center;
   font-weight: 900;
   text-shadow: 0 0 12px #de2d26;
+}
+
+h3.subtitle {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 900;
+}
+
+h4.author {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 900;
 }
 
 h2 {
@@ -74,16 +87,15 @@ For my visualisations, I focused on variables that helped tell a story about eng
 
 [My visual data story](https://carlmisquitta.github.io/stats220/visual_data_story.html)
 
-My visual data story demonstrates creativity through its design and structure. I used a red and black colour theme to match the style of YouTube Shorts and create stronger contrast. I also used CSS to style the headings, colours, shadows, and fade-in effect.
+My visual data story demonstrates creativity through its design and structure. I used a red colour palette in the visual story to match the YouTube Shorts theme, while this report uses a black background to create stronger contrast. I used CSS to style headings, colours, shadows, and a fade-in effect so the report looked more polished.
 
-The order of the plots helps create a story. I started with the most common categories, then looked at AI use, video length and likes, average likes by category, and finally the timestamp data. This made the webpage flow from general content patterns to more specific ideas about engagement.
+The order of the plots also helped create a story. I started with the most common categories, then looked at AI use, video length and likes, average likes by category, and finally the timestamp data. This made the webpage flow from general content patterns to more specific ideas about engagement.
 
 ## Learning reflection
 
 One important idea I learned from Module 4 is that visualisations need to be designed around the message you want to communicate. A graph is not just about showing data; it needs appropriate variables, labels, colours, and chart types. For example, bar charts worked well for comparing categories, while a scatter plot worked better for comparing video length and likes.
 
 I also learned that data usually needs to be prepared before making useful visualisations. In this project, I created smaller data frames for different plots and summarised the data where needed. I am now more curious about how visual design choices, such as colour, layout, and scrolling effects, can make data stories more engaging and easier to understand.
-
 
 ## Appendix
 
