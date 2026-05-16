@@ -1,30 +1,93 @@
 ---
 title: "Project 4"
 author: "Carl Misquitta"
-date: "2026-05-16"
-output: html_document
+output:
+  html_document:
+    self_contained: true
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{css, echo=FALSE}
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #de2d26;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 0 0 12px #de2d26;
+}
+
+h2 {
+  color: #de2d26;
+  font-weight: 900;
+  border-bottom: 4px solid #de2d26;
+  padding-bottom: 8px;
+  text-shadow: 0 0 10px #de2d26;
+}
+
+p {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+strong, b {
+  color: #de2d26;
+  font-weight: 900;
+}
+
+a {
+  color: #fc9272;
+  font-weight: bold;
+}
+
+.section {
+  animation: fadein 2.8s ease-in;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+pre, code {
+  background-color: #111111;
+  color: #ffffff;
+  border-radius: 8px;
+}
 ```
 
-## R Markdown
+## Introduction
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+For this project, my data collection focused on observing YouTube Shorts. Each observation was one Short that appeared while I was watching and logging videos. I recorded the category, video length, number of likes, whether the Short used or discussed AI, and an engagement rating out of 10. I chose this focus because Shorts are made to be watched quickly, so I wanted to explore what features might connect to engagement.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+I used my previous Google Form from Project 2 and adjusted it for this project. I added a question about AI because AI is now a common topic in online content, and I wanted to see whether it appeared often in my Shorts sample. I also removed the question about how long I personally watched each Short because I felt it was too personal and could be affected by outside factors, such as distractions or my mood.
 
-```{r cars}
-summary(cars)
+The form questions were useful because they mostly recorded observable details. The category question created categorical data, while the length and likes questions created numeric data. The form was anonymous, and I collected the data myself.
+
+For my visualisations, I focused on variables that helped tell a story about engagement. I used bar charts to compare categories, AI use, and average likes by category. I used a scatter plot to compare video length and likes, and a timestamp plot to show when observations were logged. The visual story showed that entertainment and advertisement appeared often, AI was not common, video length did not fully explain likes, and food videos had the highest average likes in my sample.
+
+## Visual data story
+
+[My visual data story](https://carlmisquitta.github.io/stats220/visual_data_story.html)
+
+My visual data story demonstrates creativity through its design and structure. I used a red and black colour theme to match the style of YouTube Shorts and create stronger contrast. I also used CSS to style the headings, colours, shadows, and fade-in effect.
+
+The order of the plots helps create a story. I started with the most common categories, then looked at AI use, video length and likes, average likes by category, and finally the timestamp data. This made the webpage flow from general content patterns to more specific ideas about engagement.
+
+## Learning reflection
+
+One important idea I learned from Module 4 is that visualisations need to be designed around the message you want to communicate. A graph is not just about showing data; it needs appropriate variables, labels, colours, and chart types. For example, bar charts worked well for comparing categories, while a scatter plot worked better for comparing video length and likes.
+
+I also learned that data usually needs to be prepared before making useful visualisations. In this project, I created smaller data frames for different plots and summarised the data where needed. I am now more curious about how visual design choices, such as colour, layout, and scrolling effects, can make data stories more engaging and easier to understand.
+
+I used AI support for troubleshooting and planning parts of this project, but the R code approaches I used were based on STATS 220 Lab 4A and Lab 4B examples.
+
+## Appendix
+
+```{r file='data_visualisation.R', eval=FALSE, echo=TRUE}
+
 ```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
